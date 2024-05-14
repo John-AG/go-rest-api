@@ -33,15 +33,20 @@ PostgreSQL
 
 Create a '.env' file in the root of your project with the following content:
 
-DATABASE_URL=postgres://<username>:<password>@<hostname>:<port>/<database>?sslmode=disable
+DATABASE_URL=postgres://username:password@hostname:port/database?sslmode=disable
 
-Replace '<username>', '<password>', '<hostname>', '<port>' and '<database>' with your actual PostgreSQL credentials and database details.
+Replace 'username', 'password', 'hostname', 'port' and 'database>' with your actual PostgreSQL credentials and database details.
 
 ## Endpoints
 
 'GET /': Returns a welcome message.
+
 'GET /users' Returns a list of all users.
+
 'GET /users/{id}' Returns a specific user based off the ID provided.
+
 'POST /users' Create a new user.
+
 'PUT /users/{id}' Update an existing user by ID.
+
 'DELETE /users/{id}' Delete a user by ID.
